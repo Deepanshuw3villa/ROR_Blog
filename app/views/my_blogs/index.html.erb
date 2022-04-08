@@ -1,0 +1,74 @@
+  
+<div class="mix">
+  <div class="container-data">  
+    <% @my_blogs.each do |my_blog| %>
+      <div class=" blog-start">
+        <div class="my_card card">
+          <div class="img-card my-img">
+            <% if my_blog.image.present? %>
+              <%= image_tag my_blog.image,class:"blog-img" %>
+            <% end %>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title display-4"><%= my_blog.title %></h1>
+            <p class="card-text"><%= my_blog.body %></p>
+            <p class="lead">
+            <%= link_to 'Read More..', my_blog, class: "btn btn-primary"%>
+            </p>
+
+            <% if user_signed_in? %>
+               <%= link_to 'Edit', edit_my_blog_path(my_blog) %> |
+            <%= link_to 'Destroy', my_blog, method: :delete, data: { confirm: 'Are you sure?' }, class: "link" %>
+            <% end %>
+           
+          </div>
+        </div> 
+      </div>
+    
+        
+    <% end %>
+
+
+  </div>
+  <div class="side-bar">
+    <div class="col-md-3">
+      <div class="card category"   >
+        <div class="card-header">
+          <h4>Categories</span></h4>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <% @categories.each do |category|%>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <%= link_to category.category, my_blogs_path(:cate => category.id)%>         
+                <span class="blog-span"><%= category.my_blogs.count%></span>
+              </li>
+            <%end%>
+          </ul>
+        </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card category"   >
+        <div class="card-header">
+          <h4>Recent Post</span></h4>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <% @my_blogs.last(3).each do |blog|%>
+              <li class="li st-group-item d-flex justify-content-between align-items-center">
+              <%= link_to blog.title,blog %> 
+<%# <%= link_to blog.title image_tag(blog.image) ,blog %> 
+              </li>
+            <%end%>
+          </ul>
+        </div>
+    </div>
+  </div>
+</div>
+<%# <%= link_to 'new',new_my_blog_path%> 
+
+
+
+
+
+

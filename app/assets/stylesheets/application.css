@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.background-color {
+  background-image: linear-gradient(127deg, #384dff 0%, #24cdff 91%);
+  color: white;
+  text-align: center;
+}
+.background {
+}
+.nav-background {
+  background-image: linear-gradient(127deg, #384dff 0%, #24cdff 91%);
+}
+.nav-item .nav-link {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+.nav-link:hover {
+  border-bottom: white;
+}
+.h1-main {
+  padding: 5px 5px 10px;
+}
+
+.blog-start {
+  margin: 50px auto;
+}
+.my_card {
+  display: flex !important;
+  flex-direction: row !important;
+  width: 100%;
+}
+.btn {
+  border-radius: 30%;
+}
+.link {
+  color: #249152 !important;
+  text-decoration: none;
+}
+.text-align-center {
+  text-align: center;
+}
+
+.form-control {
+  width: 50%;
+  margin: auto;
+}
+.card-text {
+  font-family: sans-serif;
+  font-size: 14px;
+  color: black;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.img-card {
+  width: 30%;
+  margin: auto;
+}
+.blog-img {
+  width: 80%;
+  margin: auto 20px;
+}
+.card-body {
+  width: 65%;
+}
+.badge {
+  color: black;
+}
+
+.mix {
+  display: flex;
+}
+.container-data {
+  width: 75%;
+  margin: auto 20px;
+}
+.category {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+.card-body {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+.side-bar {
+  display: flex;
+  width: 20%;
+}
+
+.col-md-3 {
+  width: 100%;
+}
+.blog-span {
+  background: #009cff;
+  color: white;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 27px !important;
+  height: 27px !important;
+  text-align: center;
+  font-size: 12px !important;
+}
+
+.title-show {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 46px;
+  letter-spacing: 1.4px;
+  color: black;
+  text-align: center;
+}
+
+.img-show {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.img-class {
+  width: 100%;
+}
+
+.cate-show {
+  width: 100%;
+
+  margin: 20px auto;
+}
+
+.body-show {
+  width: 100%;
+  margin: auto;
+  text-align: justify;
+}
+
+.links {
+  margin-top: 20px;
+}
+
+.show {
+  width: 80%;
+  margin: auto;
+}
+.login {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.field{
+    padding: 10px auto;
+    margin: 10px auto;
+}
+.label-login{
+    margin:10px auto;
+}
