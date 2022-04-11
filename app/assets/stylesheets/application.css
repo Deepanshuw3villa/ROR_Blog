@@ -17,6 +17,13 @@ body {
   font-weight: 600;
   font-size: 18px;
 }
+
+.navbar-brand {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 10px;
+}
 .nav-link:hover {
   border-bottom: white;
 }
@@ -59,16 +66,16 @@ body {
   -webkit-box-orient: vertical;
 }
 .img-card {
-  width: 30%;
+  width: 50%;
   margin: auto;
 }
 .blog-img {
   width: 80%;
   margin: auto 20px;
 }
-.card-body {
+/* .card-body {
   width: 65%;
-}
+} */
 .badge {
   color: black;
 }
@@ -78,7 +85,6 @@ body {
 }
 .container-data {
   width: 75%;
-  margin: auto 20px;
 }
 .category {
   width: 80%;
@@ -86,7 +92,7 @@ body {
   text-align: center;
 }
 .card-body {
-  width: 100%;
+  width: 100% !important;
 }
 a {
   text-decoration: none;
@@ -164,4 +170,59 @@ a {
 }
 .label-login{
     margin:10px auto;
+}
+
+@media (max-width:768px)  {
+  .mix{
+    display: flex;
+    flex-direction: column;
+  }
+
+ .card-header h4{
+   font-size: 16px;
+ } 
+ .blog-span{
+  background: #009cff;
+  color: white;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 17px !important;
+  height: 17px !important;
+  text-align: center;
+  font-size: 10px !important;
+  margin: auto 5px;
+} 
+.side-bar {
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column !important;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+.card-title{
+  width: 100%;
+    font-size: 19px;
+    text-align: center;
+}
+
+.img-card {
+  width: 100%;
+  margin: 15px auto 0px auto;
+}
+.container-data {
+  width: 100% !important;
+}
+}
+.fa-solid{
+  color: white;
+
 }
